@@ -1,0 +1,26 @@
+.row
+  .col-xs-4
+    = form_for @user, class: "form" do |f|
+      
+      - if @user.errors.any?
+        #error_explanation
+          %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
+          %ul
+            - @user.errors.full_messages.each do |msg|
+              %li= msg
+    
+      .field.form-group
+        = f.label :name
+        = f.text_field :name, class: "form-control"
+      .field.form-group
+        = f.label :adress
+        = f.text_field :adress, class: "form-control"
+      .field.form-group
+        = f.label :email
+        = f.text_field :email, class: "form-control"
+      .field.form-group
+        = f.label :phone
+        = f.text_field :phone, class: "form-control"
+      .actions
+        = f.submit 'Save', class: "btn, btn-primary"
+      = br
