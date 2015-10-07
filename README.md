@@ -38,3 +38,4 @@ Welcome to Project IME-USP for classes MAC 242
 
 Happy coding! The Zeta team
 
+<tt>rake doc:app</tt>.
