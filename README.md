@@ -1,11 +1,10 @@
-Welcome to Project IME-USP for classes MAC 242 
+== Welcome to Project IME-USP for classes MAC 242 
 
 Source :
 [GitHub](https://github.com/theodury/Project-MAC242/) 
 [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
 
-
-Installation Cloud9:
+* Configuration (Installation Cloud9)
 
   Connect to https://c9.io/
   Create new workspace 
@@ -18,16 +17,21 @@ Installation Cloud9:
   Choose a template
   Use Ruby on Rails Tutorial 
 
-  Installing Rails 
+*  Installing Rails 
     gem install rails -v 4.2.2
   
-  Bundler
+**Bundler
     cd app/
     bundle install --without production
     bundle exec rake db:migrate
     
-  Run 
+**Run 
     rails server -b $IP -p $PORT
+
+
+
+
+  
  
 
 
