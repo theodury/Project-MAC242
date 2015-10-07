@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  resources :engines
+  resources :models
+  resources :brands
+  resources :fuels
   resources :users
   
   root 'users#index'
