@@ -1,19 +1,40 @@
+Welcome to Project IME-USP for classes MAC 242 
 
-    ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--,
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    -----------------------------------------------------------------
+Source :
+[GitHub](https://github.com/theodury/Project-MAC242/) 
+[Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
 
 
-Hi there! Welcome to Cloud9 IDE!
+Installation Cloud9:
 
-This Cloud9 system is designed to be used with the [Ruby on Rails Tutorial](http://www.railstutorial.org/) by Michael Hartl. Full setup instructions can be found for free online in the [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+  Connect to https://c9.io/
+  Create new workspace 
+  add workspace name
+  add description  
 
-For more information on how to use Cloud9, visit http://docs.c9.io for our documentation. If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+  add Clone from Git or Mercurial URL : 
+    git@github.com:theodury/Project-MAC242.git
+
+  Choose a template
+  Use Ruby on Rails Tutorial 
+
+  Installing Rails 
+    gem install rails -v 4.2.2
+  
+  Bundler
+    cd app/
+    bundle install --without production
+    bundle exec rake db:migrate
+    
+  Run 
+    rails server -b $IP -p $PORT
+ 
+
+
+More information 
+[Ruby on Rails Tutorial](http://www.railstutorial.org/) by Michael Hartl. 
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
 
 Happy coding!
-The Cloud9 IDE team
+The Zeta team
 
