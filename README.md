@@ -5,6 +5,8 @@ Welcome to Project IME-USP for classes MAC 242 :
 Source :
 * [GitHub](https://github.com/theodury/Project-MAC242/) 
 * [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
+* [Report 1](https://docs.google.com/document/d/1xohmhGTj0VcdLkMkkmy1DL6UJx3xjFqLXyUAAxpxlI8/edit?usp=sharing) 
+
 
 Configuration (Installation Cloud9) :
 
