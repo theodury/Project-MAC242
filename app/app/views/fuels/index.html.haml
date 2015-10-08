@@ -1,6 +1,6 @@
 %h1 Listing fuels
 
-%table
+%table.table
   %thead
     %tr
       %th Name
@@ -12,10 +12,10 @@
     - @fuels.each do |fuel|
       %tr
         %td= fuel.name
-        %td= link_to 'Show', fuel
-        %td= link_to 'Edit', edit_fuel_path(fuel)
-        %td= link_to 'Destroy', fuel, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Show', fuel, class: "btn btn-primary"
+        %td= link_to 'Edit', edit_fuel_path(fuel), class: "btn btn-primary"
+        %td= link_to 'Destroy', fuel, class: "btn btn-primary", :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Fuel', new_fuel_path
+= link_to 'New Fuel', new_fuel_path, class: "btn btn-primary"
