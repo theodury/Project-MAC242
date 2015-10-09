@@ -11,39 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151007120655) do
-
-  create_table "brands", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "engines", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "fuels", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "models", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20151009212935) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
-    t.string   "adress"
+    t.string   "address"
     t.string   "email"
-    t.integer  "phone"
+    t.string   "rg"
+    t.string   "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "vehicles", force: :cascade do |t|
+    t.string   "plate"
+    t.string   "brand"
+    t.string   "model"
+    t.string   "color"
+    t.string   "fuel"
+    t.string   "displacement"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "user_id"
+  end
+
+  add_index "vehicles", ["user_id"], name: "index_vehicles_on_user_id"
 
 end
