@@ -7,6 +7,9 @@ Source :
 * [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
 * [Report 1](https://docs.google.com/document/d/1xohmhGTj0VcdLkMkkmy1DL6UJx3xjFqLXyUAAxpxlI8/edit?usp=sharing) 
 
+Authors: Théo Dury, Thiago Ivan, Monica Silva, Antônio Lima.
+
+About: This project is part of the activities required in the Programming Laboratory 2 subject. It is developed by four students.
 
 Configuration (Installation Cloud9) :
 
